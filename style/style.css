@@ -8,4 +8,9 @@
 #btn-custom-bg{
     background: rgba(29, 209, 0, 0.1);
 }
+
+.banner-bg{
+    background: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%),url("../images/banner.png");
+    border-radius: 32px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')

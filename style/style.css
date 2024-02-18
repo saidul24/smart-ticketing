@@ -16,4 +16,9 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+
+.ticket-border{
+    border-top: 2px solid rgb(29, 209, 0);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')

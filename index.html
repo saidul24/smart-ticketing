@@ -397,7 +397,7 @@
 
                             <div class="flex bg-white input rounded-xl border-none my-4" id="apply-div">
                                 <input id="coupon-input" type="text" placeholder="Have any coupon?" class=" border-none">
-                                <button class=" btn bg-[#1DD100] text-white p-3 rounded-xl" id="apply">Apply Now</button>
+                                <button class=" btn bg-[#1DD100] text-white p-3 rounded-xl" disabled id="apply">Apply Now</button>
                             </div>
 
                             <div class="text-lg font-semibold flex justify-between mt-3">
@@ -420,7 +420,7 @@
                             <div class="label">
                                 <span class="label-text text-[16px] font-semibold">Phone Number*</span>
                             </div>
-                            <input type="number" placeholder="Enter your phone number"
+                            <input type="number" id="number-input" placeholder="Enter your phone number"
                                 class="input input-bordered w-full " />
                         </label>
 
@@ -431,8 +431,8 @@
                             <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
                         </label>
 
-                        <button class="btn bg-[#1DD100] text-white w-full text-[20px] font-extrabold"
-                            onclick="next()">Next</button>
+                        <button  class="btn bg-[#1DD100] text-white w-full text-[20px] font-extrabold"
+                            onclick="next()" id="next-button" >Next</button>
 
                         <div class="flex justify-around text-[16px]">
                             <a href="" class="underline">Terms and Condition</a>

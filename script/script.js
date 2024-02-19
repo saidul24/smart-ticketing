@@ -42,6 +42,7 @@ for (const seat of allSeat) {
 
             // color set
             setBgColorById(seat.innerText)
+            seat.setAttribute("disabled", true);
 
             // append
             // Assuming you have a table element with id="myTable"
@@ -85,16 +86,29 @@ for (const seat of allSeat) {
 const couponInput = document.getElementById('coupon-input')
 const applyBtn = document.getElementById('apply');
 
+
 applyBtn.addEventListener("click", function () {
+
+    const total = document.getElementById('total');
+    const totalPrice = parseInt(total.innerText)
     const inputValue = couponInput.value;
+
     if (inputValue === "NEW15") {
         // discount 15%
-        const total = document.getElementById('total');
-        
+        const discountPrice = (totalPrice * 15) / 100;
+        const totalPay = (totalPrice - discountPrice);
+
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = totalPay
 
     }
     else if (inputValue === "Couple 20") {
-        console.log(inputValue);
+        // discount 20%
+        const discountPrice = (totalPrice * 20) / 100;
+        const totalPay = (totalPrice - discountPrice);
+
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = totalPay;
     }
     else {
         alert('Please input Valid Coupon Code')

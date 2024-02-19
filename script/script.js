@@ -100,7 +100,7 @@ applyBtn.addEventListener("click", function () {
 
         const grandTotal = document.getElementById('grand-total');
         grandTotal.innerText = totalPay
-
+        document.getElementById('apply-div').classList.add('hidden')
     }
     else if (inputValue === "Couple 20") {
         // discount 20%
@@ -109,6 +109,7 @@ applyBtn.addEventListener("click", function () {
 
         const grandTotal = document.getElementById('grand-total');
         grandTotal.innerText = totalPay;
+        document.getElementById('apply-div').classList.add('hidden')
     }
     else {
         alert('Please input Valid Coupon Code')
